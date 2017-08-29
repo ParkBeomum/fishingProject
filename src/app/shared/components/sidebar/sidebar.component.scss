@@ -108,6 +108,7 @@ $topnav-background-color: #222;
             display: block;
             list-style-type: none;
             height: auto;
+            background-color: lighten($topnav-background-color, 5%);
             li {
                 a {
                     color: #FFF;
@@ -118,6 +119,8 @@ $topnav-background-color: #222;
         }
     }
 }
+
+
 @media screen and (max-width: 992px) {
     .sidebar {
         top: 54px;
