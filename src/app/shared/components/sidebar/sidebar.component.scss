@@ -1,4 +1,7 @@
-$topnav-background-color: #222;
+$topnav-background-color: #FEF6EB;
+$effect-background-color: #C25B56;
+$font-color: #525564;
+$effect-font-color: #FEF6EB;
 .sidebar{
     border-radius: 0;
     position: fixed;
@@ -25,19 +28,19 @@ $topnav-background-color: #222;
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
-            color: #999;
+            color: $font-color;
             text-decoration: none;
             .fa {
                 margin-right: 10px;
             }
         }
         a:hover {
-            background: darken($topnav-background-color, 5%);
-            color: #fff;
+            background: $effect-background-color;
+            color: $effect-font-color;
         }
         a.router-link-active {
-            background: darken($topnav-background-color, 5%);
-            color: #fff;
+            background: $effect-background-color;
+            color: $effect-font-color;
         }
     }
     .sidebar-dropdown {
@@ -50,7 +53,7 @@ $topnav-background-color: #222;
             height : 50px;
             margin-bottom:0;
             a {
-                color : #999;
+                color : $font-color;
                 text-decoration : none;
                 font-weight:400;
                 background:$topnav-background-color;
@@ -62,13 +65,13 @@ $topnav-background-color: #222;
                 }
             }
             a:hover,a:focus {
-                color: #fff;
+                color: $effect-font-color;
                 outline: none;
                 outline-offset: -2px;
             }
         }
         .panel-title:hover {
-            background: darken($topnav-background-color, 5%);
+            background: $effect-background-color;
         }
         .panel-collapse {
             border-radious :0;
@@ -79,14 +82,14 @@ $topnav-background-color: #222;
                     background-color: $topnav-background-color;
                     border: 0 solid transparent;
                     a {
-                        color:#999;
+                        color:$font-color;
                     }
                     a:hover {
-                        color:#FFF;
+                        color:$effect-font-color;
                     }
                 }
                 .list-group-item:hover {
-                    background : darken($topnav-background-color, 5%);
+                    background : $effect-background-color;
                 }
             }
         }
@@ -108,12 +111,15 @@ $topnav-background-color: #222;
             display: block;
             list-style-type: none;
             height: auto;
-            background-color: lighten($topnav-background-color, 5%);
+            background-color: #BEB9B5;
             li {
                 a {
-                    color: #FFF;
+                    color: $font-color;
                     padding: 10px;
                     display: block;
+                }
+                a:hover{
+                  color: $effect-font-color;
                 }
             }
         }
